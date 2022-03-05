@@ -1,0 +1,157 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background: url(images/pattern-background-mobile.svg) no-repeat;
+  background-color: var(--very-pale-blue);
+  background-size: contain;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: white;
+  text-align: center;
+  width: 23rem;
+  border-radius: 10px;
+}
+.header-img {
+  img {
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+.container {
+  padding: 25px;
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+
+    margin-bottom: 20px;
+  }
+  p {
+    color: var(--desaturated-blue);
+    line-height: 1.8;
+    word-spacing: 0.05rem;
+
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+.plan-section {
+  background: var(--very-pale-blue);
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 25px 0 25px 0;
+
+  img {
+    height: 100%;
+    width: auto;
+    padding-top: 5px;
+  }
+
+  p {
+    text-align: left;
+    span {
+      font-weight: 700;
+      color: black;
+    }
+  }
+  a {
+    padding-top: 15px;
+    color: var(--bright-blue);
+    font-size: 0.9rem;
+    font-weight: 700;
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+      opacity: 50%;
+    }
+  }
+}
+
+.pay-btn {
+  background: var(--bright-blue);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 50%;
+  }
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: grey;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    color: black;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 900px) {
+  body {
+    background: url(images/pattern-background-desktop.svg) no-repeat;
+    background-size: contain;
+  }
+  main {
+    width: 26rem;
+  }
+  .container {
+    padding: 40px;
+
+    p {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  .plan-section {
+    padding: 20px;
+  }
+  .pay-btn {
+    padding: 15px;
+  }
+}
