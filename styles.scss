@@ -87,6 +87,7 @@ main {
       cursor: pointer;
       text-decoration: none;
       opacity: 50%;
+      transition: opacity 0.3s;
     }
   }
 }
@@ -106,7 +107,8 @@ main {
 
   &:hover {
     cursor: pointer;
-    opacity: 50%;
+    opacity: 0.5;
+    transition: opacity 0.3s;
   }
 }
 
@@ -119,6 +121,7 @@ main {
   &:hover {
     cursor: pointer;
     color: black;
+    transition: color 0.3s;
   }
 }
 

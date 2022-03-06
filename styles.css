@@ -107,6 +107,8 @@ main {
   cursor: pointer;
   text-decoration: none;
   opacity: 50%;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .pay-btn {
@@ -125,7 +127,9 @@ main {
 
 .pay-btn:hover {
   cursor: pointer;
-  opacity: 50%;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .cancel-btn {
@@ -139,6 +143,8 @@ main {
 .cancel-btn:hover {
   cursor: pointer;
   color: black;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .attribution {
